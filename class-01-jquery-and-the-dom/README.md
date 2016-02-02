@@ -28,5 +28,5 @@ Your first independent assignment can be found in the `portfolio-assignment` sub
 ## Class Videos
  - [Part 1 of 4](https://youtu.be/byHIxgQaYdU)
  - [Part 2 of 4](https://youtu.be/DR8R_saAJyQ)
- - [Part 3 of 4]()
+ - [Part 3 of 4](https://youtu.be/_MIIx5dAMxc)
  - [Part 4 of 4](https://youtu.be/6Hn9e9zv21Y)
