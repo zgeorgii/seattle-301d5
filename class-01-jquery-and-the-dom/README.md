@@ -24,3 +24,9 @@ Your first independent assignment can be found in the `portfolio-assignment` sub
   - https://www.youtube.com/watch?v=XU0llRltyFM
  - jQuery Cheat sheet: http://oscarotero.com/jquery/
  - jQuery "Basics" course: https://teamtreehouse.com/library/jquery-basics
+
+## Class Videos
+ - [Part 1 of 4](https://youtu.be/byHIxgQaYdU)
+ - [Part 2 of 4]()
+ - [Part 3 of 4]()
+ - [Part 4 of 4]()
