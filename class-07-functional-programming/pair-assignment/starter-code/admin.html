@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="/styles/layout.css">
     <link rel="stylesheet" href="/styles/modules.css">
     </head>
-    <!-- TODO: Setup a template for each row of the Author Stats section of this page: -->
+    <!-- DONE: Setup a template for each row of the Author Stats section of this page: -->
     <script id="author-template" type="text/x-handlebars-template">
-      <li><strong>{{name}}</strong>: {{numWords}} words written</li>
+      <section id="authors">
+        <li><strong>{{author}}</strong>: {{numWords}} words written</li>
+      </section>
     </script>
   <body>
     <header class="site-header clearfix">
@@ -39,6 +41,9 @@
         <h2>Author Stats</h2>
         <p><em>Details on who is writing, and how much writing they are doing...</em></p>
         <ul class="author-stats">
+          <section id="authors">
+
+          </section>
           <!-- TODO: Use a handlebars template to fill in some stats for each author -->
         </ul>
       </section>
@@ -47,12 +52,16 @@
       &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
     </footer>
 
-    <script src="/vendor/scripts/jquery-2.1.4.js"></script>
-    <script src="/vendor/scripts/handlebars.js"></script>
-    <script src="/scripts/article.js"></script>
-    <script src="/scripts/articleView.js"></script>
+    <script src="vendor/scripts/jquery-2.1.4.js"></script>
+    <script src="vendor/scripts/handlebars.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
     <script>
       // TODO: After we fetch and load all the articles, what view function do we want to run next?
+
+      Article.fetchAll();
+      Article.numWordsByAuthor();
+
       // Let's pass in a callback function, to determine what happens AFTER all articles are loaded.
     </script>
   </body>

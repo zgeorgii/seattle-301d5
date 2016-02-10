@@ -1,4 +1,4 @@
-// TODO: Wrap the entire contents of this file in an IIFE.
+// DONE: Wrap the entire contents of this file in an IIFE.
 // Pass in to the IIFE a module, upon which objects can be attached for later access.
 (function(module) {
   function Article (opts) {
@@ -17,7 +17,7 @@
 
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
-    this.body = marked(this.body);
+    // this.body = marked(this.body);
 
     return template(this);
   };
@@ -39,7 +39,7 @@
 
   // This function will retrieve the data from either a local or remote source,
   // and process it, then hand off control to the View.
-  // TODO: Refactor this function, so it accepts an argument of a callback function (likely a view function)
+  // DONE: Refactor this function, so it accepts an argument of a callback function (likely a view function)
   // to execute once the loading of articles is done.
   Article.fetchAll = function() {
     if (localStorage.rawData) {
@@ -64,7 +64,7 @@
     });
   };
 
-  // TODO: Chain together a `map` and a `reduce` call to produce an array of unique author names.
+  // DONE: Chain together a `map` and a `reduce` call to produce an array of unique author names.
 
   Article.allAuthors = function() {
     return Article.all.map(function(article) {
@@ -80,7 +80,7 @@
     };
 
   Article.numWordsByAuthor = function() {
-    // TODO: Transform each author string into an object with 2 properties: One for
+    // DONE: Transform each author string into an object with 2 properties: One for
     // the author's name, and one for the total number of words across all articles written by the specified author.
     return Article.allAuthors().map(function(author) {
       return {
